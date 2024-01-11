@@ -32,7 +32,7 @@ Unless you want to change the tool's behavior, only cells from ```A4``` to ```BR
 - Choose a future expected return for the asset in column ```G```. For a $7$% return, give $1.07$.
 - Use columns ```H``` to ```BR``` to indicate the country weight of each asset. Gold is treated as a country.
 
-A value of $0$ is assumed for a cell left empty. If your own gold, put it in the stocks/ETF section and write $100$ in column ```AZ``` at the corresponding row (because column ```AZ``` corresponds to the country gold). For stocks, bonds, gold and cash, historical average returns can be used to try to infer future returns. For cryptocurrencies, we are all quite blind.
+A value of $0$ is assumed for a cell left empty. If you invest in gold, put it in the stocks/ETF section and write $100$ in column ```AZ``` at the corresponding row (because column ```AZ``` corresponds to the country gold). For stocks, bonds, gold and cash, historical average returns can be used to try to infer future returns. For cryptocurrencies, we are all quite blind.
 Skip columns ```H``` to ```BR``` if you are uninterested in the geographical distribution of your portfolio.
 
 - Use rows ```4``` to ```26``` for stocks, ETF and gold.
@@ -41,7 +41,29 @@ Skip columns ```H``` to ```BR``` if you are uninterested in the geographical dis
 - Use rows ```50``` to ```59``` for cash.
 
 Once all input cells are filled, you can check out the geographical repartition of your portfolio between rows ```61``` and ```64```. Between rows ```67``` and ```73```, you will find the expected value of your portfolio over time,
-as well as the repartition between stocks, bonds, cryptocurrencies and cash. The time evolution of fees is indicated between rows ```74``` and ```76```. Finally, pie charts and graphs of the portfolio are plotted between rows ```81``` and ```162```.
+as well as the repartition between stocks, bonds, cryptocurrencies and cash. The time evolution of fees is indicated between rows ```74``` and ```76```. Finally, useful pie charts and graphs of the portfolio are plotted between rows ```81``` and ```162```.
+
+
+## Maths
+
+Here is how the tool computes the portfolio value over time. Let
+
+- $t$ be the time, in years, from now.
+- $\alpha_i$ be the monthly purchase of asset $i$.
+- $\beta_i$ be the amount of asset $i$ currently owned.
+- $\gamma_i$ be the expected return of asset $i$ (The worth of asset $i$ is multiplied by $\gamma_i$ each year).
+- $\delta_i$ be the expense ratio of asset $i$.
+- $\eta_i=\gamma_i-\delta_i$. Due to fees, the value of asset $i$ is actually only multiplied by $\eta_i$ each year.
+- $V_i(t)$ is the asset worth in the portfolio over time.
+
+We have
+
+- $V_i(t) = \beta_i\eta_i^t+12\alpha_i\frac{\eta_i^t-1}{\eta_i-1}$,
+
+and then the total value $V(t)$ of the portfolio is computed by addind the value of all assets in the portfolio
+
+- $V(t) = \sum_iV_i(t)$.
+
 
 
 ## Contributors
