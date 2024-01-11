@@ -58,11 +58,11 @@ Here is how the tool computes the portfolio value over time. Let
 
 We have
 
-- $V_i(t) = \beta_i\eta_i^t+12\alpha_i\frac{\eta_i^t-1}{\eta_i-1}$,
+- $\displaystyle{V_i(t) = \beta_i\eta_i^t+12\alpha_i\frac{\eta_i^t-1}{\eta_i-1}}$,
 
 and then the total value $V(t)$ of the portfolio is computed by addind the value of all assets in the portfolio
 
-- $V(t) = \sum_iV_i(t)$.
+- $\displaystyle{V(t) = \sum_iV_i(t)}$.
 
 
 
