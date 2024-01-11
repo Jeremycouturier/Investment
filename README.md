@@ -25,12 +25,12 @@ Unless you want to change the tool's behavior, only cells from ```A4``` to ```BR
 
 - Give the asset's alias in column ```A``` (optional).
 - Give the asset's ISIN in column ```B```, if relevant (optional).
-- Give the asset's expense ratio in column ```C```.
+- Give the asset's expense ratio (in %/yr) in column ```C```.
 - Give the asset's issuer in column ```D``` (optional).
-- Give the amount of the asset you buy monthly in column ```E```.
-- Give the amount of the asset you currently own in column ```F```.
+- Give the amount of the asset you buy monthly (in k€) in column ```E```.
+- Give the amount of the asset you currently own (in k€) in column ```F```.
 - Choose a future expected return for the asset in column ```G```. For a $7$% return, give $1.07$.
-- Use columns ```H``` to ```BR``` to indicate the country weight of each asset. Gold is treated as a country.
+- Use columns ```H``` to ```BR``` to indicate the country weight of each asset (in %). Gold is treated as a country.
 
 A value of $0$ is assumed for a cell left empty. If you invest in gold, put it in the stocks/ETF section and write $100$ in column ```AZ``` at the corresponding row (because column ```AZ``` corresponds to the country gold). For stocks, bonds, gold and cash, historical average returns can be used to try to infer future returns. For cryptocurrencies, we are all quite blind.
 Skip columns ```H``` to ```BR``` if you are uninterested in the geographical distribution of your portfolio.
