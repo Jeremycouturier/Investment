@@ -29,7 +29,7 @@ Unless you want to change the tool's behavior, only cells from ```A4``` to ```BR
 - Give the asset's issuer in column ```D``` (optional).
 - Give the amount of the asset you buy monthly in column ```E```.
 - Give the amount of the asset you currently own in column ```F```.
-- Choose a future expected return for the asset in column ```G```. For a $7\%$ return, give $1.07$.
+- Choose a future expected return for the asset in column ```G```. For a $7$% return, give $1.07$.
 - Use columns ```H``` to ```BR``` to indicate the country weight of each asset, when relevant. Gold is treated as a country.
 
 A value of $0$ is assumed for a cell left empty. If your own gold, put it in the stocks/ETF section and write $100$ in column ```AZ``` at the corresponding row. For stocks, bonds, gold and cash, historical average returns can be used to try to infer future returns. For cryptocurrencies, we are all quite blind.
