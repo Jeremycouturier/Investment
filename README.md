@@ -49,11 +49,11 @@ as well as the repartition between stocks, bonds, cryptocurrencies and cash. The
 Here is how the tool computes the portfolio value over time. Let
 
 - $t$ be the time, in years, from now.
-- $\alpha_i$ be the monthly purchase of asset $i$.
-- $\beta_i$ be the amount of asset $i$ currently owned.
-- $\gamma_i$ be the expected return of asset $i$ (The worth of asset $i$ is multiplied by $\gamma_i$ each year).
-- $\delta_i$ be the expense ratio of asset $i$.
-- $\eta_i=\gamma_i-\delta_i$. Due to fees, the value of asset $i$ is actually only multiplied by $\eta_i$ each year.
+- $\alpha_i$ be the monthly purchase of asset $i$ (column ```E```).
+- $\beta_i$ be the amount of asset $i$ currently owned (column ```F```).
+- $\gamma_i$ be the expected return of asset $i$ (column ```G```). The worth of asset $i$ is multiplied by $\gamma_i$ each year.
+- $\delta_i$ be the expense ratio of asset $i$ (column ```C```).
+- $\eta_i=\gamma_i-\delta_i$. Due to fees, the value of asset $i$ is actually only multiplied by $\eta_i$ each year, instead of $\gamma_i$.
 - $V_i(t)$ is the asset worth in the portfolio over time.
 
 We have
