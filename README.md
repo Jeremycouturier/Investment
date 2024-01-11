@@ -54,13 +54,13 @@ Here is how the tool computes the portfolio value over time. Let
 - $\gamma_i$ be the expected return of asset $i$ (column ```G```). The worth of asset $i$ is multiplied by $\gamma_i$ each year.
 - $\delta_i$ be the expense ratio of asset $i$ (column ```C```).
 - $\eta_i=\gamma_i-\delta_i$. Due to fees, the value of asset $i$ is actually only multiplied by $\eta_i$ each year, instead of $\gamma_i$.
-- $V_i(t)$ is the asset worth in the portfolio over time.
+- $V_i(t)$ is the asset's worth in the portfolio over time.
 
 We have
 
 - $\displaystyle{V_i(t) = \beta_i\eta_i^t+12\alpha_i\frac{\eta_i^t-1}{\eta_i-1}}$,
 
-and then the total value $V(t)$ of the portfolio is computed by addind the value of all assets in the portfolio
+and then the total value $V(t)$ of the portfolio is computed by adding the value of all assets in the portfolio
 
 - $\displaystyle{V(t) = \sum_iV_i(t)}$.
 
