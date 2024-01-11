@@ -15,7 +15,7 @@ A simple tool written with LibreOffice Calc to analyze a portfolio of investment
 
 ## Installation
 
-Simply download the file ```Calculator.ods``` to your computer.
+Simply download and open the file ```Calculator.ods```.
 
 
 ## Documentation
