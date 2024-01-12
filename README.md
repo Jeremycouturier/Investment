@@ -27,7 +27,7 @@ Unless you want to change the tool's behavior, only cells from ```A4``` to ```BR
 - Give the asset's ISIN in column ```B```, if relevant (optional).
 - Give the asset's expense ratio (in %/yr) in column ```C```.
 - Give the asset's issuer in column ```D``` (optional).
-- Give the amount of the asset you buy monthly (in k€) in column ```E```.
+- Give the amount of the asset you buy monthly (in k€, or whatever currency you wish) in column ```E```.
 - Give the amount of the asset you currently own (in k€) in column ```F```.
 - Choose a future expected return for the asset in column ```G```. For a $7$% return, give $1.07$.
 - Use columns ```H``` to ```BR``` to indicate the country weight of each asset (in %). Gold is treated as a country.
@@ -42,6 +42,7 @@ Skip columns ```H``` to ```BR``` if you are uninterested in the geographical dis
 
 Once all input cells are filled, you can check out the geographical repartition of your portfolio between rows ```61``` and ```64```. Between rows ```67``` and ```73```, you will find the expected value of your portfolio over time,
 as well as the repartition between stocks, bonds, cryptocurrencies and cash. The time evolution of fees is indicated between rows ```74``` and ```76```. Finally, useful pie charts and graphs of the portfolio are plotted between rows ```81``` and ```162```.
+By double-clicking on the pie-chart of the country repartition, you can have more information by hovering the mouse over the slices.
 
 
 ## Maths
