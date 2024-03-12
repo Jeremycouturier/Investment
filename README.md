@@ -7,7 +7,7 @@ A simple tool written with LibreOffice Calc to analyze a portfolio of investment
 
 - Handles stocks, ETF, bonds, cryptocurrencies, cash and gold.
 - Each asset is given an expected return, an expense ratio, and a monthly investment.
-- Computes the portfolio value over time taking into account fees, expected returns and monthly contributions of each asset.
+- Computes the portfolio value over time taking into account fees, expected returns and monthly contributions in each asset.
 - Analyzes the country repartition of the portfolio, as well as the weight of each asset class.
 - Can help build a diversified portfolio and spot over and under-exposures.
 - Completely open source. All features are available in the public github repository.
@@ -29,7 +29,7 @@ Unless you want to change the tool's behavior, only cells from ```A4``` to ```BR
 - Give the asset's issuer in column ```D``` (optional).
 - Give the amount of the asset you buy monthly (in k€, or whatever currency you wish) in column ```E```.
 - Give the amount of the asset you currently own (in k€) in column ```F```.
-- Choose a future expected return for the asset in column ```G```. For a $7$% return, give $1.07$.
+- Choose a future expected return for the asset in column ```G```. For a $7$% yearly return, give $1.07$.
 - Use columns ```H``` to ```BR``` to indicate the country weight of each asset (in %). Gold is treated as a country.
 
 A value of $0$ is assumed for a cell left empty. If you invest in gold, put it in the stocks/ETF section and write $100$ in column ```AZ``` at the corresponding row (because column ```AZ``` corresponds to the country gold). For stocks, bonds, gold and cash, historical average returns can be used to try to infer future returns. For cryptocurrencies, we are all quite blind.
